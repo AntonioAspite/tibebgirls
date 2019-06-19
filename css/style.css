@@ -13,6 +13,9 @@ body {
 }
 
 .jumbotron {
+}
+
+.main_jumbotron{
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -280,12 +283,12 @@ h3 {
 }
 
 .card-img-top {
-   /* You can set the dimensions to whatever you want */
+  /* You can set the dimensions to whatever you want */
   height: 500px;
   object-fit: cover;
 }
 
-.picture{
+.picture {
   border-radius: 20px;
 }
 
@@ -294,7 +297,7 @@ h1 {
   font-size: 100px !important;
 }
 
-.cover {
+.hero_cover {
   padding: 5rem;
   margin-top: 5rem;
   background-color: #ffffffa4;
@@ -315,11 +318,11 @@ h1 {
   transform: translateY(-50%);
 } */
 
-.some_partners{
+.some_partners {
   margin-bottom: 100px !important;
 }
 
-.behindCarousel{
+.behindCarousel {
   width: 70% !important;
 }
 
@@ -342,12 +345,65 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
-  #hero {
+}
+#hero {
   position: relative;
-  }
-  .fullscreen_video {
+}
+.fullscreen_video {
   /* optional */
   width: 100%;
   height: 100%;
-  }
+}
+
+#problemvideo {
+  margin: 0 auto;
+  display: block;
+}
+
+.rescue_jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+  background-image: url("../images/tibebgirlstotherescue.png");
+  /* opacity: 0.5; */
+}
+
+.army_jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+  background-image: url("../images/army.png");
+}
+
+.rescue_container{
+  height: 40vh;
+}
+
+.rescue_cover {
+  padding-top: 3rem;
+  height: 100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  background-color: #ffffffa4;
+  /* border-radius: 10px; */
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
