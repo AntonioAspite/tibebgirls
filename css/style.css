@@ -12,18 +12,11 @@ body {
   position: relative;
 }
 
-.jumbotron {
-}
-
 .main_jumbotron{
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
   margin-bottom: 0 !important;
-  background-image: url("../images/heroimage.png");
 }
 
 /*nav*/
@@ -88,11 +81,15 @@ body {
   margin-top: 30%;
 }
 
-h1 {
+h1, h3 {
   color: #9b0000 !important;
   width: 100%;
   max-width: 100%;
   font-family: "Fresca", sans-serif !important;
+}
+
+.join_paragraph a , .card button{
+  color: #9b0000 !important;
 }
 
 p {
@@ -144,8 +141,8 @@ iframe {
 }
 
 .container {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 /*========================================== PORTOFOLIO ====================================*/
@@ -222,7 +219,7 @@ svg {
 }
 
 .volunteer-form {
-  margin-top: 100px !important;
+  margin-top: 50px !important;
 }
 
 .footer {
@@ -274,12 +271,7 @@ svg {
 
 .card-img {
   height: 100% !important;
-  width: 200px !important;
-}
-
-h3 {
-  margin-top: 50px !important;
-  margin-bottom: 30px !important;
+  width: 150em !important;
 }
 
 .card-img-top {
@@ -290,6 +282,10 @@ h3 {
 
 .picture {
   border-radius: 20px;
+}
+
+.brukty{
+  width: 100% !important;
 }
 
 h1 {
@@ -369,7 +365,7 @@ h1 {
   background-size: cover;
   width: 100vw;
   margin-bottom: 0 !important;
-  background-image: url("../images/tibebgirlstotherescue.png");
+  background-image: url("../images/tibebgirlstotherescue.jpg");
   /* opacity: 0.5; */
 }
 
@@ -383,6 +379,42 @@ h1 {
   width: 100vw;
   margin-bottom: 0 !important;
   background-image: url("../images/army.png");
+}
+
+.vision_jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+  background-image: url("../images/heroimage.jpg");
+}
+
+.behind_jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+  background-image: url("../images/tibebunite.jpg");
+}
+
+.join_jumbotron {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+  background-image: url("../images/behindscenes3.jpg");
 }
 
 .rescue_container{
@@ -401,9 +433,19 @@ h1 {
 }
 
 #myVideo {
+  /* position: relative; */
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  z-index: -1 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  min-width: 100% !important; 
+  min-height: 100% !important;
+}
+
+.jumbotron{
+  background-color: #ffffff00 !important;
+}
+
+main{
+  background: #fff;
 }
