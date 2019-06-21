@@ -1,95 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+/*********************************************************************************************/
+/******************************************* STYLE *******************************************/
+/*********************************************************************************************/
 
 body {
   padding: 0;
   margin: 0;
   background: #f4f4f4;
-  /* font-family: "Roboto" !important; */
-  /* font-family: 'Fresca', sans-serif !important; */
   font-family: "Source Sans Pro", sans-serif !important;
   height: 100% !important;
   position: relative;
 }
 
-.main_jumbotron{
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  margin-bottom: 0 !important;
-}
-
-/*nav*/
-.navbar {
-  background: #087f23;
-  font-family: "Fresca", sans-serif !important;
-}
-.nav-link {
-  color: #f4f4f4;
-  cursor: pointer;
-}
-.navbar-brand {
-  color: #f4f4f4;
-  cursor: pointer;
-}
-.navbar-brand:hover {
-  color: #f4f4f4;
-}
-
-.nav-pills .nav-link.active {
-  color: #087f23 !important;
-  background-color: #f4f4f4 !important;
-}
-
-.nav-pills .nav-link.nav-donate {
-  color: #f4f4f4;
-  background-color: #9b0000 !important;
-}
-
-.nav-pills .nav-link.nav-donate:hover {
-  color: #f4f4f4;
-  background-color: #d80000 !important;
-}
-
-.nav-link {
-  margin-right: 1em !important;
-}
-.nav-link:hover {
-  background: #f4f4f4;
-  color: #087f23;
-}
-.navbar-collapse {
-  justify-content: flex-end;
-}
-.navbar-toggler {
-  background: #fff !important;
-}
-
-/*header*/
-.header {
-  /* background-color: rgb(255, 255, 255); */
-  background-color: rgb(255, 255, 255);
-}
-
-.description {
-  padding-left: 50px !important;
-  padding-right: 0;
-  padding-top: 4rem;
-}
-
-.hero_margin_text {
-  margin-top: 30%;
-}
-
-h1, h3 {
+h1,
+h3 {
   color: #9b0000 !important;
   width: 100%;
   max-width: 100%;
   font-family: "Fresca", sans-serif !important;
 }
 
-.join_paragraph a , .card button{
-  color: #9b0000 !important;
+h1 {
+  margin-bottom: 60px !important;
+  font-size: 100px !important;
 }
 
 p {
@@ -114,21 +46,197 @@ p {
   color: #fff;
 }
 
-.superpower {
-  color: #9b0000;
+.container {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-.teacher {
-  height: 80% !important;
-  width: 100% !important;
-  margin-top: 80px;
-  margin-bottom: 80px;
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
-.img-fluid {
-  /* height: 100% !important; */
-  /* width: 100% !important; */
+main {
+  background: #fff;
 }
+
+.jumbotron {
+  background-color: #ffffff00 !important;
+}
+
+.picture {
+  border-radius: 20px;
+}
+
+/*********************************************************************************************/
+/******************************************* NAV BAR *****************************************/
+/*********************************************************************************************/
+
+.navbar {
+  background: #087f23;
+  font-family: "Fresca", sans-serif !important;
+}
+.nav-link {
+  color: #f4f4f4;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+.navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+.navbar-brand:hover {
+  color: #f4f4f4;
+  border-radius: 10px !important;
+}
+
+.nav-pills .nav-link.active {
+  color: #087f23 !important;
+  background-color: #f4f4f4 !important;
+}
+
+.nav-donate {
+  color: #f4f4f4;
+  border-radius: 10px !important;
+  background-color: #9b0000 !important;
+}
+
+.navbar-toggler i {
+  color: #9b0000 !important;
+}
+
+.nav-donate:hover {
+  color: #f4f4f4 !important;
+  background-color: #d80000 !important;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  background: #f4f4f4;
+  color: #087f23;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-toggler {
+  background: #fff !important;
+}
+
+/*********************************************************************************************/
+/******************************************* HEADER ******************************************/
+/*********************************************************************************************/
+
+.main_jumbotron {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 0 !important;
+}
+
+#hero_video {
+  /* position: relative; */
+  position: fixed;
+  z-index: -1 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+}
+
+.hero_cover {
+  padding: 5rem;
+  margin-top: 5rem;
+  background-color: #ffffffa4;
+  border-radius: 10px;
+}
+
+/*********************************************************************************************/
+/******************************************* TITLES ******************************************/
+/*********************************************************************************************/
+
+/* Formatting for the banner section titles */
+
+.rescue_container {
+  height: 40vh;
+}
+
+.banner_title {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 0 !important;
+}
+
+.rescue_jumbotron {
+  background-image: url("../images/tibebgirlstotherescue.jpg");
+  /* opacity: 0.5; */
+}
+
+.army_jumbotron {
+  background-image: url("../images/army.png");
+}
+
+.vision_jumbotron {
+  background-image: url("../images/heroimage.jpg");
+}
+
+.behind_jumbotron {
+  background-image: url("../images/tibebunite.jpg");
+}
+
+.join_jumbotron {
+  background-image: url("../images/behindscenes3.jpg");
+}
+
+.banner_cover {
+  padding-top: 3rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffa4;
+}
+
+/* secondary title formatting */
+
+.title {
+  margin-bottom: 90px;
+}
+
+.about-title {
+  margin-bottom: 30px;
+}
+
+/*********************************************************************************************/
+/******************************************* MAIN BODY ***************************************/
+/*********************************************************************************************/
+
+/* "The Problem" section */
+
+.problem {
+  background-color: #087f23;
+}
+
+.description {
+  padding-left: 50px !important;
+  padding-right: 0;
+  padding-top: 4rem;
+}
+
+.join_paragraph a,
+.card button {
+  color: #9b0000 !important;
+  white-space: normal;
+}
+
 .firstdes {
   margin-top: 160px;
 }
@@ -137,90 +245,59 @@ p {
   padding-top: 160px;
 }
 
-iframe {
-}
-
-.container {
-  padding-top: 5em;
-  padding-bottom: 5em;
-}
-
-/*========================================== PORTOFOLIO ====================================*/
-
-/* .portfolio{
- margin: 4em 0;
-    position: relative;
-}
-.portfolio h1{
- color:#F97300;
- margin: 2em;
-}
-.portfolio img{
-  height: 15rem;
-  width: 100%;
-  margin: 1em;
-} */
-
-.container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-.portafolio {
-  padding-top: 5px;
+.videocontainer {
+  padding-bottom: 56.25%;
   position: relative;
-}
-.portafolio h1 {
-  color: #332876;
-  margin: 2em;
-}
-.portafolio .card {
-  box-shadow: 0 0 20px #ccc;
-}
-.portafolio .card img {
+  display: block;
   width: 100%;
-  height: 12em;
-}
-.portafolio .card-title {
-  color: #9b0000;
-  font-family: "Fresca", sans-serif !important;
-}
-.portafolio .card-body {
-  padding: 1em;
 }
 
-/*========================================== WAVE ====================================*/
-
-.nuestras_experiencias {
-  color: #ff5131;
-}
-
-.fondo_experiencia {
-  background: #ffbcaf;
-}
-
-svg {
-  display: inline-block;
+#problemvideo {
   position: absolute;
-  top: -150px;
+  top: 0;
   left: 0;
 }
-.contenedor {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 10%;
-  vertical-align: middle;
-  overflow: hidden;
-}
-.wave {
-  stroke: none;
-  fill: #ffbcaf;
+
+/* "Behind the Scenes" section carousel */
+
+.behindCarousel {
+  width: 100% !important;
 }
 
-.volunteer-form {
-  margin-top: 50px !important;
+.behindScenesImg img {
+  width: auto !important;
+  height: 30rem !important;
+  max-height: 30rem !important;
 }
+
+/* "Tibeb Girls Army" section*/
+
+.brukty {
+  width: 100% !important;
+}
+
+/* "Some of our partners" section */
+
+.some_partners {
+  margin-bottom: 100px !important;
+}
+
+.frame {
+  height: 10rem; /* equals max image height */
+  line-height: 10rem;
+  width: 10rem;
+  text-align: center;
+  margin: 1em 0;
+}
+.frame img {
+  vertical-align: middle;
+  max-height: 12rem;
+  max-width: 12rem;
+}
+
+/*********************************************************************************************/
+/******************************************* FOOTER ******************************************/
+/*********************************************************************************************/
 
 .footer {
   padding-top: 5rem;
@@ -233,219 +310,57 @@ svg {
   background-color: #9b0000;
 }
 
-.about {
-  background-color: #087f23;
+/*********************************************************************************************/
+/*************************************** VOLUNTEER FORM **************************************/
+/*********************************************************************************************/
+
+.volunteer-form {
+  margin-top: 50px !important;
 }
 
-.partners-item {
-  cursor: pointer;
-  margin-bottom: 50px;
-  /* margin-top: 50px; */
+/*********************************************************************************************/
+/***************************************** RESPONSIVE ****************************************/
+/*********************************************************************************************/
 
-  /* 
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  
-  border-radius: 0.5rem;
-  overflow: hidden; */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  #hero_video{
+    transform: perspective(1px) translateX(-50%);
+    right: auto !important;
+  }
+  .hero_cover {
+    margin-top: 20rem;
+  }
 }
 
-.partners-item img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hero_cover {
+    margin-top: 10rem !important;
+  }
 }
 
-.title {
-  margin-bottom: 90px;
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .hero_cover {
+    margin-top: 1rem !important;
+  }
 }
 
-.about-title {
-  margin-bottom: 30px;
-}
-
-/* .button-learn-more{
-  margin-bottom: 30px;
-} */
-
-.card-img {
-  height: 100% !important;
-  width: 150em !important;
-}
-
-.card-img-top {
-  /* You can set the dimensions to whatever you want */
-  height: 500px;
-  object-fit: cover;
-}
-
-.picture {
-  border-radius: 20px;
-}
-
-.brukty{
-  width: 100% !important;
-}
-
-h1 {
-  margin-bottom: 50px !important;
-  font-size: 100px !important;
-}
-
-.hero_cover {
-  padding: 5rem;
-  margin-top: 5rem;
-  background-color: #ffffffa4;
-  border-radius: 10px;
-}
-
-/* .carousel-item {
-  height: 300px; overflow: hidden;
-}
-
-.carousel-item img {
-  margin: auto;
-} */
-
-/* .carousel-item img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
-.some_partners {
-  margin-bottom: 100px !important;
-}
-
-.behindCarousel {
-  width: 70% !important;
-}
-
-.behindScenesImg img {
-  width: auto !important;
-  height: 30rem !important;
-  max-height: 30rem !important;
-  /* height: 100% !important; */
-}
-
-.videoContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#hero {
-  position: relative;
-}
-.fullscreen_video {
-  /* optional */
-  width: 100%;
-  height: 100%;
-}
-
-#problemvideo {
-  margin: 0 auto;
-  display: block;
-}
-
-.rescue_jumbotron {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 0 !important;
-  background-image: url("../images/tibebgirlstotherescue.jpg");
-  /* opacity: 0.5; */
-}
-
-.army_jumbotron {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 0 !important;
-  background-image: url("../images/army.png");
-}
-
-.vision_jumbotron {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 0 !important;
-  background-image: url("../images/heroimage.jpg");
-}
-
-.behind_jumbotron {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 0 !important;
-  background-image: url("../images/tibebunite.jpg");
-}
-
-.join_jumbotron {
-  padding: 0 !important;
-  margin: 0 !important;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin-bottom: 0 !important;
-  background-image: url("../images/behindscenes3.jpg");
-}
-
-.rescue_container{
-  height: 40vh;
-}
-
-.rescue_cover {
-  padding-top: 3rem;
-  height: 100%;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  background-color: #ffffffa4;
-  /* border-radius: 10px; */
-}
-
-#myVideo {
-  /* position: relative; */
-  position: fixed;
-  z-index: -1 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  min-width: 100% !important; 
-  min-height: 100% !important;
-}
-
-.jumbotron{
-  background-color: #ffffff00 !important;
-}
-
-main{
-  background: #fff;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1 {
+    margin-bottom: 20px !important;
+    font-size: 70px !important;
+  }
+  .hero_cover{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+    padding: 1rem;
+  }
+  .behindScenesImg img {
+    height: 15rem !important;
+    max-height: 15rem !important;
+  }
 }

@@ -12,17 +12,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Fresca:400,700"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fresca&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Fresca|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="css/style.css"
     />
-    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/tibebarmygallery.css" />
     <link
       href="vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
@@ -39,79 +37,79 @@
     <meta name="msapplication-TileColor" content="#4caf50" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#4caf50" />
+
+    <!-- Javascript -->
+    <script src="vendor/js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/js/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendor/js/jquery.backstretch.min.js"></script>
+    <script src="js/tibebgirls.js"></script>
   </head>
 
   <body data-spy="scroll" data-target="#navbar-spy" data-offset="40">
-    <!-- navbar , navbar-light bg-light-->
     <nav
       id="navbar-spy"
-      class="navbar navbar-expand-lg fixed-top  justify-content-center"
+      class="navbar navbar-expand-lg fixed-top"
     >
-      <!-- <a class="navbar-brand" href="#">Tibeb Girls</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#problem">Problem</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#solution">Solution</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#vision">Vision</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#behind">Behind The Scenes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#tibebarmy">Tibeb Army</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#join">Join</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#press">Press</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-donate" href="#donate"
-            ><b>Donate <i class="fas fa-heart"></i></b
-          ></a>
-        </li>
-      </ul>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse justify-content-center" id="navbar">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#problem">Problem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#solution">Solution</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#vision">Vision</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#behind">Behind The Scenes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tibebarmy">Tibeb Army</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#join">Join</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#press">Press</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-donate" href="#donate"
+                    ><b>Donate <i class="fas fa-heart"></i></b
+                  ></a>
+                </li>
+              </ul>
+        </div>
     </nav>
 
     <!--********************* HOME SECTION *********************-->
 
     <section id="home" class="container-fluid">
-      <!-- <div class="jumbotron main_jumbotron">
-        <main class="inner cover hero_cover">
-          <h1 class="cover-heading">Tibeb Girls</h1>
-          <p class="lead">
-            A story of three young girls in a small African village who find
-            themselves thrown into a centuries-old battle for the equality of
-            women and men.
-          </p>
-          <hr class="my-4" />
-          <p class="lead">
-            <a class="btn btn-lg" href="#problem" role="button">Learn more</a>
-          </p>
-        </main>
-      </div> -->
       <div class="jumbotron main_jumbotron">
-        <video autoplay muted loop id="myVideo">
-          <source src="images/hero.mp4" type="video/mp4" />
+        <video autoplay muted loop id="hero_video">
+          <source src="images/hero3.mp4" type="video/mp4" />
         </video>
         <main class="inner cover hero_cover">
           <h1 class="cover-heading">Tibeb Girls</h1>
@@ -130,26 +128,19 @@
     <main>
       <!--********************* PROBLEM SECTION *********************-->
 
-      <!-- Problem Section -->
-      <section class="page-section text-white mb-0 about" id="problem">
+      <section class="page-section text-white mb-0 problem" id="problem">
         <div class="container">
-          <!-- About Section Heading -->
           <h2
             class="page-section-heading text-center text-uppercase text-white about-title"
           >
             The Problem
           </h2>
-          <!-- <h1 class="text-center nuestras_experiencias">
-        The Problem WHITE
-      </h1> -->
-
-          <!-- About Section Content -->
-          <div class="justify-content-center">
+          <div class="videocontainer justify-content-center">
             <iframe
               id="problemvideo"
               type="text/html"
-              width="720"
-              height="405"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/nQ_wlU57swA?autoplay=1&controls=0&fs=0"
               frameborder="0"
               allowfullscreen
@@ -161,14 +152,9 @@
       <!--********************* SOLUTION SECTION *********************-->
 
       <section id="solution" class="container-fluid">
-        <!-- <h2
-        class="page-section-heading text-center text-uppercase text-secondary title"
-      >
-        Solution
-      </h2> -->
-        <div class="jumbotron rescue_jumbotron">
+        <div class="jumbotron banner_title rescue_jumbotron">
           <div class="rescue_container">
-            <main class="inner cover rescue_cover">
+            <main class="inner cover  banner_cover">
               <h1 class="cover-heading">Tibeb Girls to the Rescue!</h1>
             </main>
           </div>
@@ -181,7 +167,7 @@
           The Tibeb Girls Show
         </h2>
         <div class="row">
-          <div class="col-7">
+          <div class="col-lg-7 col-sm-12">
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -382,7 +368,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 col-sm-12">
             <img class="img-fluid picture" src="images/solution.png" />
           </div>
           </div>
@@ -390,21 +376,21 @@
         </br></br></br>
         <div class="row">
             <h2
-            class="col-lg-12 page-section-heading text-center text-uppercase text-secondary title"
+            class="col-12 page-section-heading text-center text-uppercase text-secondary title"
           >
             the girls
           </h2>
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-sm-12 text-center">
               <h3>Fitih <i class="fas fa-fire"></i> Power girl</h3></br>
                 <img src="images/characters/fitih.png" class="img-fluid" /></br></br>
                 <h5>The power of <b>STRENGTH</b> and <b>SPEED</b>.</h5>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-sm-12 text-center">
               <h3>Tigist <i class="fas fa-brain"></i> Whiz Kid</h3></br>
                 <img src="images/characters/tigist.png" class="img-fluid" /></br></br>
                 <h5>The power to <b>SEE</b> the <b>FUTURE</b>.</h5>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-lg-4 col-sm-12 text-center">
               <h3>Fikir <i class="fas fa-heart"></i> Empathy girl</h3></br>
                 <img src="images/characters/fikir.png" class="img-fluid" />
               </br></br>
@@ -415,9 +401,9 @@
 
       <!--********************* VISION SECTION *********************-->
       <section id="vision" class="container-fluid">
-        <div class="jumbotron vision_jumbotron">
+        <div class="jumbotron banner_title vision_jumbotron">
           <div class="rescue_container">
-            <main class="inner cover rescue_cover">
+            <main class="inner cover  banner_cover">
               <h1 class="cover-heading">Tibeb Vision</h1>
             </main>
           </div>
@@ -430,13 +416,7 @@
           </div>
           <div class="col-sm-5">
             <p>
-              We are excited to introduce a new action-drama radio show about
-              three young girls who use their superpowers to fight against
-              injustice and the many harmful practices Ethiopian girls routinely
-              face. Using their powers to see the past and future, Tibeb Girls
-              draws the audience into the typical lives of Ethiopian girls,
-              building empathy for their hardship and a vision of a brighter
-              future. Tibeb Girls puts girls’ issues at the center and provides
+              Tibeb Girls puts girls’ issues at the center and provides
               examples of girls asserting themselves, problem-solving, and
               implementing solutions. By broadcasting a program that will
               examine harmful practices and explore girls’ agency in addressing
@@ -453,6 +433,11 @@
         <div class="">
           <div class="row">
             <div class="col-sm-5 description">
+                <h3
+                
+              >
+                Future Plans
+              </h3>
               <p>
                 While at this point, we are seeking support for the initial
                 pilot season of the Tibeb Girls, we are looking at how the
@@ -473,9 +458,9 @@
 
       <!--********************* BEHIND THE SCENES SECTION *********************-->
       <section id="behind" class="container-fluid">
-        <div class="jumbotron behind_jumbotron">
+        <div class="jumbotron banner_title behind_jumbotron">
           <div class="rescue_container">
-            <main class="inner cover rescue_cover">
+            <main class="inner cover  banner_cover">
               <h1 class="cover-heading">Behind the Scenes</h1>
             </main>
           </div>
@@ -484,14 +469,22 @@
       <section class="container">
         <div class="row">
           <div class="col-sm-7">
-            <img src="images/drawing.jpg" class="img-fluid" />
+              <iframe
+              id="problemvideo"
+              type="text/html"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/0Bt_lp42wjE?autoplay=0&controls=0&fs=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="col-sm-5 description">
-              <h2
-              class="col-lg-12 page-section-heading text-center text-uppercase text-secondary title"
+              <h3
+              
             >
               Tibeb Story
-            </h2>
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque
               exercitationem natus, eum dolorem alias praesentium aperiam
@@ -501,7 +494,12 @@
           </div>
         </div>
       </br></br>
-        <div
+      <h2
+              class="col-lg-12 page-section-heading text-center text-uppercase text-secondary title"
+            >
+              Tibeb Army at Work
+            </h2>
+        <!-- <div
           id="carouselExampleIndicators"
           class="carousel slide mx-auto behindCarousel"
           data-ride="carousel"
@@ -565,15 +563,57 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div> -->
+        <div class="carousel-photos behindCarousel">
+            <div class="carousel-inside">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-photo behindScenesImg">
+                    <img class="d-block w-100 img-fluid mx-auto" src="images/behindscenes/workshop.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-photo behindScenesImg">
+                    <img class="d-block w-100 img-fluid mx-auto" src="images/behindscenes/desta.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-photo behindScenesImg">
+                    <img class="d-block w-100 img-fluid mx-auto" src="images/behindscenes/idowu.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-photo behindScenesImg">
+                    <img class="d-block w-100 img-fluid mx-auto" src="images/behindscenes/house.jpg">
+                </div>
+                <label for="carousel-4" class="carousel-controller prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-controller next control-1">›</label>
+                <label for="carousel-1" class="carousel-controller prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-controller next control-2">›</label>
+                <label for="carousel-2" class="carousel-controller prev control-3">‹</label>
+                <label for="carousel-4" class="carousel-controller next control-3">›</label>
+                <label for="carousel-3" class="carousel-controller prev control-4">›</label>
+                <label for="carousel-1" class="carousel-controller next control-4">›</label>
+                <ol class="carousel-bullets">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-4" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
         </div>
       </section>
 
       <!--********************* TIBEB ARMY SECTION *********************-->
 
       <section id="tibebarmy" class="container-fluid">
-        <div class="jumbotron army_jumbotron">
+        <div class="jumbotron banner_title army_jumbotron">
           <div class="rescue_container">
-            <main class="inner cover rescue_cover">
+            <main class="inner cover  banner_cover">
               <h1 class="cover-heading">Tibeb Girls Army</h1>
             </main>
           </div>
@@ -699,10 +739,11 @@
       </section>
 
       <!--********************* JOIN SECTION *********************-->
+
       <section id="join" class="container-fluid">
-        <div class="jumbotron join_jumbotron">
+        <div class="jumbotron banner_title join_jumbotron">
           <div class="rescue_container">
-            <main class="inner cover rescue_cover">
+            <main class="inner cover  banner_cover">
               <h1 class="cover-heading">Join Tibeb Army!</h1>
             </main>
           </div>
@@ -710,7 +751,7 @@
       </section>
       <section class="container join_paragraph">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-sm-12">
             <p>
               There are several easy ways to help support Tibeb Girls and become
               part of the army that empowers adolescent:
@@ -759,7 +800,7 @@
               the movement <i class="fas fa-hand-holding-heart"></i>.
             </p>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-sm-12">
             <div><img class="img-fluid picture" src="images/join.jpg" /></div>
           </div>
         </div>
@@ -771,243 +812,227 @@
         <h1 class="text-center">
           What the Press Says...
         </h1>
-        <div
-          id="carousel-example"
-          class="carousel slide"
-          data-ride="carousel"
-          data-interval="1500"
-        >
-          <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+        <div class="container">
+            <div
+              id="carousel-example"
+              class="carousel slide press"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                  <a
+                    href="https://www.dw.com/en/tibeb-girls-fight-for-girls-rights-in-ethiopia/av-40940174"
+                    target="_blank"
+                    ><img src="images/press/dw.png" class="img-fluid" alt="DW"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://mashable.com/2017/05/09/tibeb-girls-ethiopia-feminist/?europe=true"
+                    target="_blank"
+                    ><img
+                      src="images/press/mashable.png"
+                      class="img-fluid"
+                      alt="mashable"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://www.voanews.com/africa/ethiopian-girls-become-heroes-their-own-story"
+                    target="_blank"
+                    ><img src="images/press/voa.png" class="img-fluid" alt="voa"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://nowthisnews.com/videos/tibeb-girls-is-ethiopias-answer-to-the-powerpuff-girls"
+                    target="_blank"
+                    ><img
+                      src="images/press/nowthis.png"
+                      class="img-fluid"
+                      alt="nowthis"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://www.lemonde.fr/afrique/article/2017/06/18/les-tibeb-girls-ethiopiennes-super-heroines-et-feministes_5146610_3212.html"
+                    target="_blank"
+                    ><img
+                      src="images/press/lemonde.png"
+                      class="img-fluid"
+                      alt="lemonde"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://www.telesurenglish.net/news/Tibeb-Girls-The-Feminist-Ethiopian-Powerpuff-Girls-20170410-0023.html"
+                    target="_blank"
+                    ><img
+                      src="images/press/telesur.png"
+                      class="img-fluid"
+                      alt="telesur"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="http://africandigitalart.com/2016/11/tibeb-girls-ethiopian-girl-power-animation-series/"
+                    target="_blank"
+                    ><img src="images/press/adalogo.png" class="img-fluid" alt="ada"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://womenyoushouldknow.net/woman-creates-animated-series-featuring-trio-of-ethiopian-girl-superheroes-who-fight-injustice-in-their-country/"
+                    target="_blank"
+                    ><img
+                      src="images/press/womenysk.png"
+                      class="img-fluid"
+                      alt="womenyoushouldknow"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://face2faceafrica.com/article/tibeb-girls"
+                    target="_blank"
+                    ><img
+                      src="images/press/face2face.png"
+                      class="img-fluid"
+                      alt="wiriko"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="http://africanfeminism.com/tibeb-girls-changing-the-narrative-on-girls-agency/"
+                    target="_blank"
+                    ><img
+                      src="images/press/africanfem.png"
+                      class="img-fluid"
+                      alt="wiriko"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://afropunk.com/2017/04/ethiopian-animated-series-is-like-powerpuff-girls-for-african-kids/"
+                    target="_blank"
+                    ><img
+                      src="images/press/afropunk.png"
+                      class="img-fluid"
+                      alt="wiriko"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://challenges.openideo.com/challenge/education-emergencies/ideas/tibeb-girls-program"
+                    target="_blank"
+                    ><img
+                      src="images/press/openideo.png"
+                      class="img-fluid"
+                      alt="wiriko"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://www.globalcitizen.org/es/content/meet-the-feminist-super-heroes-in-ethiopias-powerp/"
+                    target="_blank"
+                    ><img src="images/press/global.png" class="img-fluid" alt="wiriko"
+                  /></a>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <a
+                    href="https://www.wiriko.org/wiriko/superheroinas-etiopes/"
+                    target="_blank"
+                    ><img src="images/press/wiriko.png" class="img-fluid" alt="wiriko"
+                  /></a>
+                </div>
+              </div>
               <a
-                href="https://www.dw.com/en/tibeb-girls-fight-for-girls-rights-in-ethiopia/av-40940174"
-                target="_blank"
-                ><img src="images/press/dw.png" class="img-fluid" alt="DW"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                class="carousel-control-prev"
+                href="#carousel-example"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
               <a
-                href="https://mashable.com/2017/05/09/tibeb-girls-ethiopia-feminist/?europe=true"
-                target="_blank"
-                ><img
-                  src="images/press/mashable.png"
-                  class="img-fluid"
-                  alt="mashable"
-              /></a>
+                class="carousel-control-next"
+                href="#carousel-example"
+                role="button"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://www.voanews.com/africa/ethiopian-girls-become-heroes-their-own-story"
-                target="_blank"
-                ><img src="images/press/voa.png" class="img-fluid" alt="voa"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://nowthisnews.com/videos/tibeb-girls-is-ethiopias-answer-to-the-powerpuff-girls"
-                target="_blank"
-                ><img
-                  src="images/press/nowthis.png"
-                  class="img-fluid"
-                  alt="nowthis"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://www.lemonde.fr/afrique/article/2017/06/18/les-tibeb-girls-ethiopiennes-super-heroines-et-feministes_5146610_3212.html"
-                target="_blank"
-                ><img
-                  src="images/press/lemonde.png"
-                  class="img-fluid"
-                  alt="lemonde"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://www.telesurenglish.net/news/Tibeb-Girls-The-Feminist-Ethiopian-Powerpuff-Girls-20170410-0023.html"
-                target="_blank"
-                ><img
-                  src="images/press/telesur.png"
-                  class="img-fluid"
-                  alt="telesur"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="http://africandigitalart.com/2016/11/tibeb-girls-ethiopian-girl-power-animation-series/"
-                target="_blank"
-                ><img src="images/press/adalogo.png" class="img-fluid" alt="ada"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://womenyoushouldknow.net/woman-creates-animated-series-featuring-trio-of-ethiopian-girl-superheroes-who-fight-injustice-in-their-country/"
-                target="_blank"
-                ><img
-                  src="images/press/womenysk.png"
-                  class="img-fluid"
-                  alt="womenyoushouldknow"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://face2faceafrica.com/article/tibeb-girls"
-                target="_blank"
-                ><img
-                  src="images/press/face2face.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="http://africanfeminism.com/tibeb-girls-changing-the-narrative-on-girls-agency/"
-                target="_blank"
-                ><img
-                  src="images/press/africanfem.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://afropunk.com/2017/04/ethiopian-animated-series-is-like-powerpuff-girls-for-african-kids/"
-                target="_blank"
-                ><img
-                  src="images/press/afropunk.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://challenges.openideo.com/challenge/education-emergencies/ideas/tibeb-girls-program"
-                target="_blank"
-                ><img
-                  src="images/press/openideo.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://www.globalcitizen.org/es/content/meet-the-feminist-super-heroes-in-ethiopias-powerp/"
-                target="_blank"
-                ><img
-                  src="images/press/global.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-            <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-              <a
-                href="https://www.wiriko.org/wiriko/superheroinas-etiopes/"
-                target="_blank"
-                ><img
-                  src="images/press/wiriko.png"
-                  class="img-fluid"
-                  alt="wiriko"
-              /></a>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carousel-example"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carousel-example"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
       </section>
 
       <!--********************* PARTNERS SECTION *********************-->
 
-      <!-- Partners Section -->
       <section class="page-section" id="contact">
         <div class="container">
-          <!-- Contact Section Heading -->
-          <!-- <h2
-          class="page-section-heading text-center text-uppercase text-secondary title"
-        >
-          Partners
-        </h2> -->
           <h1 class="text-center some_partners">
             Some of Our Partners
           </h1>
-
-          <!-- Contact Section Form -->
           <div class="row">
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/wef.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/unesco.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/usaid.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/social.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/psi.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/renew.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/reach.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/growthafrica.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/jh.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/ethiopia.png" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/marie.jpg" />
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="partners-item mx-auto">
-                <img class="img-fluid" src="images/partners/dsw.jpg" />
-              </div>
-            </div>
+              <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/wef.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/unesco.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/usaid.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/social.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/psi.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/renew.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/reach.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/growthafrica.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/jh.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/ethiopia.png" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/marie.jpg" />
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                  <div class="frame mx-auto">
+                    <img class="img-fluid" src="images/partners/dsw.jpg" />
+                  </div>
           </div>
         </div>
       </section>
@@ -1021,8 +1046,9 @@
             <!-- Footer Location -->
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Our studio</h4>
-              <p class="lead mb-0">PO Box <br />Addis Ababa, Ethiopia</p>
-              <p class="lead mb-0">+251 2342342344</p>
+              <p class="lead mb-0">P.O. Box 608 Code 1250. <br />Addis Ababa, Ethiopia.</p>
+              <p class="lead mb-0">+251 116297768</p>
+              <div class="mapouter mb-0"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=9.004554%2C%2038.808454&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}</style></div>
             </div>
 
             <!-- Footer Social Icons -->
@@ -1084,21 +1110,5 @@
         <small>Copyright &copy; Whiz Kids 2019</small>
       </section>
     </main>
-
-    <script src="vendor/js/jquery-3.3.1.min.js"></script>
-    <script src="vendor/js/jquery-migrate-3.0.0.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-    <script src="vendor/js/jquery.backstretch.min.js"></script>
-    <!-- Custom scripts for this page -->
-    <script src="js/tibebgirls.js"></script>
   </body>
 </html>
