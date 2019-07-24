@@ -8,7 +8,7 @@ body {
   background: #f4f4f4;
   font-family: "Source Sans Pro", sans-serif !important;
   height: 100% !important;
-  position: relative;
+  position: relative !important;
 }
 
 h1,
@@ -91,7 +91,7 @@ main {
   border-radius: 10px !important;
 }
 
-.nav-pills .nav-link.active {
+.nav-link.active {
   color: #087f23 !important;
   background-color: #f4f4f4 !important;
 }
